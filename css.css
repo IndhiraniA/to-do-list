@@ -1,0 +1,149 @@
+body {
+  margin: 10px auto;
+  height:30%;
+  width:40%;
+  background-color: rgb(192, 192, 192);
+}
+* {
+  box-sizing: border-box;
+}
+/* heading */
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #e22a1d;
+  --color-2: #0d6f99;
+  --color-3: #e91814;
+}
+
+.title-word-2 {
+  --color-1: #b37b04;
+  --color-2: #09aa97;
+  --color-3: #020b0c;
+}
+
+.title-word-3 {
+  --color-1: #109c8c;
+  --color-2: #a82a28;
+  --color-3: #03423b;
+}
+
+.title-word-4 {
+  --color-1: #052635;
+  --color-2: #6e2d09;
+  --color-3: #be120f;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 200%;
+  text-transform: uppercase;
+}
+/*  */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background:yellow;
+  font-size: 18px;
+  transition: 0.2s;
+
+
+}
+
+
+ul li:hover {
+  background: rgb(69, 235, 199);
+}
+ul li.checked {
+  background:rgb(140, 231, 144);
+  color: white;
+  text-decoration:line-through;
+}
+
+/* this is for the (tick)symbol after the box is checked */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  /* for position of tick */
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  /* without this tick will look like "l"so we rotate it by 45% */
+  transform: rotate(45deg);
+  /* size of tick */
+  height: 15px;
+  width: 7px;
+}
+
+/* it is for Style the close button */
+/* we are not using close icon adhukku badhila js "\u00D7" denotes the "multiplication"symbol */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0;
+}
+.addBtn:hover {
+  background-color:aqua;
+}
+#clear-list{
+  width: 30%;
+  font-weight: bold;
+  font-family: "Times New Roman";
+  margin: 40px 35%;
+  background-color: darkblue;
+  color: white;
+}
+#clear-list:hover{
+  color:black;
+  background-color:rgb(83, 203, 207);
+}
