@@ -130,7 +130,7 @@ input {
   font-weight: bold;
   font-family: "Times New Roman";
   margin: 40px 35%;
-
+  background-color:blue;
   color: white;
 }
 #clear-list:hover{
