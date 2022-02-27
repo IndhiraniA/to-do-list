@@ -145,4 +145,5 @@ input {
 #clear-list:hover{
   color:black;
   background-color:rgb(83, 203, 207);
+  box-shadow:red;
 }
