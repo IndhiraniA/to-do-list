@@ -2,7 +2,6 @@
 .title-word {
   animation: color-animation 4s linear infinite;
 }
-
 .title-word-1 {
   --color-1: #e22a1d;
   --color-2: #0d6f99;
