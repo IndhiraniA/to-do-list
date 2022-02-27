@@ -154,11 +154,34 @@ input {
  background: #780206;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+   
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background:yellow;
+  font-size: 18px;
+  transition: 0.2s;
 
-        }
-       /*for small devices  */
-       /* for large devices */
- 
+
+}
+
+
+ul li:hover {
+  background: rgb(69, 235, 199);
+}
+ul li.checked {
+  background:rgb(140, 231, 144);
+  color: white;
+  text-decoration:line-through;
+}
+    
 }
 @media screen and (min-width : 749px) {
     body{
